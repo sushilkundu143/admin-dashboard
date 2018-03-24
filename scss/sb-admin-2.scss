@@ -94,19 +94,28 @@ body {
         left: auto;
     }
 }
-
+.navbar-header{
+    a.toggle-btn{
+        float: left;
+        padding:21px 19px;
+        background-color: #00A3B3;
+        color: #fff;
+        height:70px;
+    
+    }
+}
 .bg-sidebar {
-    background-color: $theme-color !important;
+    background-color: $sidebar-item-hover-color !important;
 }
 
 .bg-nav {
     background-color: white;
-    z-index: 0 !important;
+    z-index: 10 !important;
 }
 
 .sidebar-nav a {
     color: #fff;
-    padding: 20px 15px !important;
+    padding:0 !important;
 }
 
 .sidebar {
@@ -121,10 +130,32 @@ body {
     }
     ul {
         li {
-            border-bottom: 1px solid #e7e7e7;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,0.2);
+            overflow: hidden;
             a {
-                &.active {
-                    background-color: $theme-color;
+               &:hover > .menu-item-desc {
+                   display: block;
+               }
+                overflow: hidden;
+                div{
+                    float:left !important;
+                    padding:25px 10px 25px 10px;
+                    display:block;
+                }
+                .menu-item{
+                    width:65px;
+                }
+                .menu-item-desc{
+                    display:none;
+                    padding:30px 40px 27px 2px;
+                    height:100% !important;
+                    border-left: 1px solid rgba(255, 255, 255, 0.1);
+                    width:181px;
+                    span{
+                        margin-left:10px;
+                        text-transform: uppercase;
+                        display:inline-block;
+                    }
                 }
             }
         }
@@ -173,7 +204,7 @@ body {
         z-index: 1;
         position: absolute;
         width: auto;
-        margin-top: 0px;
+        margin-top: 70px;
     }
     .navbar-top-links .dropdown-messages,
     .navbar-top-links .dropdown-tasks,

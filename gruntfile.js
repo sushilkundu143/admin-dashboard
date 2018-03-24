@@ -9,17 +9,16 @@ module.exports = function (grunt) {
     },
     watch: {
       scripts: {
-        files: ['**/*.js'],
-        tasks: ['jshint'],
+        files: ['scss/**.scss'],
+        tasks: ['sass'],
         options: {
           spawn: false,
         },
       },
     },
   });
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-node-sass');
-  grunt.registerTask('default', ['sass']);
-  grunt.loadNpmTasks('grunt-contrib-watch');  
+  grunt.registerTask('default', ['sass', 'watch']);
 
 };
