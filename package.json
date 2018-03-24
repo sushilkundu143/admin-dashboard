@@ -1,0 +1,14 @@
+{
+  "name": "psd-to-html",
+  "version": "1.0.0",
+  "description": "This is repo for admin demo project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sushil",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-node-sass": "^1.0.1"
+  }
+}
