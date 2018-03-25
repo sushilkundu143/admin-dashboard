@@ -8,11 +8,11 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      scripts: {
+      css: {
         files: ['scss/**.scss'],
         tasks: ['sass'],
         options: {
-          spawn: false,
+          livereload: true,
         },
       },
     },
@@ -20,5 +20,4 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-node-sass');
   grunt.registerTask('default', ['sass', 'watch']);
-
 };
