@@ -1,7 +1,6 @@
 body {
   background-color: #f8f8f8;
-  font-family: "Lato";
-  overflow: hidden; }
+  font-family: "Lato"; }
 
 #wrapper {
   width: 100%;
@@ -560,6 +559,9 @@ body {
 .navbar_header_txt {
   font-size: 36px;
   font-weight: 700;
+  margin-left: 5px;
+  height: 70px;
+  border-right: 1px solid #00A3B3;
   color: #00A3B3 !important; }
 
 .checkbox label {
@@ -662,7 +664,7 @@ table.event-table {
   margin-bottom: 0px; }
 
 .flex_contain1 {
-  width: calc(100% - 220px);
+  width: calc(100% - 225px);
   float: right;
   padding: 0 15px; }
 
