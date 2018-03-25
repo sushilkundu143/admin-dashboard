@@ -51,9 +51,9 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top bg-nav " role="navigation" style="margin-bottom: 0; height:71px !important">
+        <nav class="navbar navbar-default navbar-static-top bg-nav" role="navigation" style="margin-bottom: 0; height:71px !important">
             <div class="navbar-header">
-                <a href="javascript:void(0)" class="toggle-btn">
+                <a href="javascript:void(0)" id="toggle-btn" class="toggle-btn">
                     <i class="fa fa-align-left fa-2x"></i>
                     <!-- Dashboard -->
                 </a>
@@ -291,6 +291,12 @@
                 <!-- /.dropdown -->
             </ul>
             <!-- /.navbar-top-links -->
+            <div class="notification-toggle-btn" >
+                    <a href="#" id="notification-toggle">
+                        <i class="fa fa-bell-o fa-2x"></i>
+                    </a>
+                </div>
+          
 
             <div class="navbar-default sidebar bg-sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -1632,6 +1638,7 @@
         <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
         <script src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
         <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
+        <script src="dist/js/menu-toggle.js"></script>
         <script src="dist/js/dcalendar.picker.js"></script>
         <!-- Page-Level Demo Scripts - Tables - Use for reference -->
         <script>
