@@ -717,7 +717,9 @@ body {
         }
     }
 }
-
+.search {
+    background-color: #f6f6f6;
+}
 .dropdown.m {
     margin: 5px 0;
 }
@@ -728,6 +730,7 @@ body {
     z-index: 9;
     color: #a09f9f;
     cursor: pointer;
+    font-size: 16px;
 }
 /* css inherit class */
 

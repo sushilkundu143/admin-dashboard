@@ -490,6 +490,9 @@ body {
   border: 0;
   bottom: -3px; }
 
+.search {
+  background-color: #f6f6f6; }
+
 .dropdown.m {
   margin: 5px 0; }
 
@@ -499,7 +502,8 @@ body {
   right: 27px;
   z-index: 9;
   color: #a09f9f;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 16px; }
 
 /* css inherit class */
 @media (min-width: 1024px) {
