@@ -907,6 +907,9 @@ table.event-table {
     tr {
         &.active {
             color: $todo_li_txt_color;
+            td {
+                background-color: transparent;
+            }
         }
         td {
             vertical-align: middle;
