@@ -650,13 +650,11 @@ body {
         }
         &.active {
             a {
-                border-bottom: 2px solid #01a9b4;
                 background-color: transparent;
                 color: #000;
                 font-weight: bold;
                 &:focus,
                 &:hover {
-                    border-bottom: 2px solid #01a9b4;
                     background-color: transparent;
                     color: #000;
                     font-weight: bold;
@@ -711,7 +709,7 @@ body {
                     background-color: #01a9b4 !important;
                     position: absolute;
                     border: 0;
-                    bottom: -3px;
+                    bottom: -6px;
                 }
             }
         }

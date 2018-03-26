@@ -471,12 +471,10 @@ body {
   color: #bcbec0; }
 
 .nav-pills li.active a {
-  border-bottom: 2px solid #01a9b4;
   background-color: transparent;
   color: #000;
   font-weight: bold; }
   .nav-pills li.active a:focus, .nav-pills li.active a:hover {
-    border-bottom: 2px solid #01a9b4;
     background-color: transparent;
     color: #000;
     font-weight: bold; }
@@ -508,7 +506,7 @@ body {
   background-color: #01a9b4 !important;
   position: absolute;
   border: 0;
-  bottom: -3px; }
+  bottom: -6px; }
 
 .search {
   background-color: #f6f6f6; }
