@@ -507,6 +507,9 @@ body {
 
 /* css inherit class */
 @media (min-width: 1024px) {
+  .bg-theme {
+    background-color: #00A3B3 !important; }
+
   .flex {
     display: flex; }
 
@@ -670,10 +673,16 @@ table.event-table {
 .calendar tr:first-child th {
   font-size: 16px !important; }
 
-.calendar-panel .panel-heading {
-  padding: 7px 15px; }
-.calendar-panel .panel-body .icon i {
-  font-size: 2rem; }
+.calendar-panel {
+  color: white;
+  border-radius: 0; }
+  .calendar-panel .panel-heading {
+    padding: 7px 15px;
+    color: white; }
+    .calendar-panel .panel-heading a {
+      color: white; }
+  .calendar-panel .panel-body .icon i {
+    font-size: 2rem; }
 
 .checkbox-primary input[type="checkbox"]:checked + label::before {
   background-color: #428bca;

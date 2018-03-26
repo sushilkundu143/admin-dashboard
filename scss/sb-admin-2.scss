@@ -739,6 +739,9 @@ body {
 /* css inherit class */
 
 @media(min-width: 1024px) {
+    .bg-theme {
+        background-color: $theme-color !important;
+    }
     .flex {
         display: flex;
     }
@@ -927,8 +930,14 @@ table.event-table {
 }
 
 .calendar-panel {
+    color: white;
+    border-radius: 0;
     .panel-heading {
         padding: 7px 15px;
+        color: white;
+        a {
+         color: white;    
+        }
     }
     .panel-body {
         .icon {
