@@ -44,3 +44,8 @@ $(function () {
         $(this).parents('.input-group-btn').find('.btn-search').html(selText);
     });
 });
+
+oTable = $('#myTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+$('#myInputTextField').keyup(function(){
+      oTable.search($(this).val()).draw() ;
+})
