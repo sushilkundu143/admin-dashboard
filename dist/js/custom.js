@@ -45,10 +45,18 @@ $(function () {
     });
 });
 
-oTable = $('#myTable').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+var table = $('#dataTables-example').DataTable();
+
+// #myInput is a <input type="text"> element
+$('#myInputTextField').on('keyup change', function () {
+    table.search(this.value).draw();
+});
+/*
+oTable = $('#myTable').DataTable();   
 $('#myInputTextField').keyup(function(){
       oTable.search($(this).val()).draw() ;
 })
+*/
 // calendar data match functionality
 let dataMatches = $('.table.event-table > tbody > tr');
 let dates = ((dataMatches) => {
@@ -61,6 +69,7 @@ let dates = ((dataMatches) => {
    return result;
 });
 let myDa = dates(dataMatches);
+
 $('table#calendar-demo td>span').click(function(){
     let myResult;
     let eventUpdateDate = $('#event-updates').find('div.date');
