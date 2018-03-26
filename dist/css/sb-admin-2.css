@@ -649,6 +649,8 @@ body {
 
 table.event-table {
   table-layout: fixed; }
+  table.event-table tr.active {
+    color: #25aa03; }
   table.event-table tr td {
     vertical-align: middle; }
     table.event-table tr td.event-desc {
@@ -658,7 +660,7 @@ table.event-table {
       white-space: nowrap;
       width: 80%; }
     table.event-table tr td.calander-check i {
-      font-size: 2rem; }
+      font-size: 16px; }
 
 .calendar tr:first-child th {
   font-size: 16px !important; }
@@ -901,3 +903,34 @@ table.event-table {
 
 .dataTables_length {
   display: none; }
+
+.todo_list_txt {
+  color: #04707c;
+  font-weight: 700;
+  margin-bottom: 2px; }
+
+.todo_list_txt2 {
+  font-weight: 700; }
+
+.todo_list_txt3 {
+  font-weight: 700;
+  color: #f00000;
+  margin-bottom: 2px; }
+
+.todo_txt1 {
+  color: #8bc97c; }
+
+.todo_txt2 {
+  color: #25aa03; }
+
+.todo_icon1 {
+  color: #24a900; }
+
+.todo_icon2 {
+  color: #0890a0; }
+
+.todo_font {
+  font-size: 12px; }
+
+.todo_iconsz {
+  font-size: 15px; }
