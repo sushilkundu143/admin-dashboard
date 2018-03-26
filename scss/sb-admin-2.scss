@@ -906,6 +906,7 @@ table.event-table {
     table-layout: fixed;
     tr {
         &.active {
+            background-color: transparent;
             color: $todo_li_txt_color;
             td {
                 background-color: transparent;

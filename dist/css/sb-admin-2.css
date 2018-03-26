@@ -650,7 +650,10 @@ body {
 table.event-table {
   table-layout: fixed; }
   table.event-table tr.active {
+    background-color: transparent;
     color: #25aa03; }
+    table.event-table tr.active td {
+      background-color: transparent; }
   table.event-table tr td {
     vertical-align: middle; }
     table.event-table tr td.event-desc {

@@ -28,6 +28,7 @@ $(document).ready(function () {
     $('#dataTables-example').DataTable({
         responsive: true,
         pageLength: 5,
+        bDestroy: true,
         aLengthMenu: [
             [5, 10, 25, 50, 75, -1],
             [5, 10, 25, 50, 75, "All"]
@@ -36,6 +37,7 @@ $(document).ready(function () {
     $('#dataTables-example1').DataTable({
         responsive: true,
         pageLength: 5,
+        bDestroy: true,
         aLengthMenu: [
             [5, 10, 25, 50, 75, -1],
             [5, 10, 25, 50, 75, "All"]
@@ -44,6 +46,7 @@ $(document).ready(function () {
     $('#dataTables-example2').DataTable({
         responsive: true,
         pageLength: 5,
+        bDestroy: true,
         aLengthMenu: [
             [5, 10, 25, 50, 75, -1],
             [5, 10, 25, 50, 75, "All"]
