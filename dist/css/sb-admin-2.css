@@ -900,3 +900,6 @@ table.event-table {
 .dataTables_filter,
 .dataTables_info {
   display: none; }
+
+.dataTables_length {
+  display: none; }
