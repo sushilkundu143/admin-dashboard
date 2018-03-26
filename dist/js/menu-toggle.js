@@ -21,15 +21,18 @@ $(document).ready(function(){
 $(document).ready(function () {
     $('#dataTables-example').DataTable({
         responsive: true,
-        pageLength: 5
+        pageLength: 5,
+        aLengthMenu: [[5, 10, 25, 50, 75, -1], [5, 10, 25, 50, 75, "All"]]
     });
     $('#dataTables-example1').DataTable({
         responsive: true,
-        pageLength: 5
+        pageLength: 5,
+        aLengthMenu: [[5, 10, 25, 50, 75, -1], [5, 10, 25, 50, 75, "All"]]
     });
     $('#dataTables-example2').DataTable({
         responsive: true,
-        pageLength: 5
+        pageLength: 5,
+        aLengthMenu: [[5, 10, 25, 50, 75, -1], [5, 10, 25, 50, 75, "All"]]
     });
 });
 // $('.sidebar').height($("body").height());
