@@ -907,6 +907,9 @@ body {
 table.event-table {
     table-layout: fixed;
     tr {
+        &.active {
+            color: $todo_li_txt_color;
+        }
         td {
             vertical-align: middle;
             &.event-desc {
@@ -918,7 +921,7 @@ table.event-table {
             }
             &.calander-check {
                 i {
-                    font-size: 2rem;
+                    font-size: 16px;
                 }
             }
         }
@@ -1242,4 +1245,41 @@ table.event-table {
 }
 .dataTables_length {
     display: none;
+}
+.todo_list_txt{
+    color: #04707c;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.todo_list_txt2{
+    font-weight: 700;
+}
+.todo_list_txt3{
+    font-weight: 700;
+    color: #f00000;
+    margin-bottom: 2px;
+}
+
+
+.todo_txt1{
+    color: $todo_li_datetime_color;
+}
+.todo_txt2{
+    color: $todo_li_txt_color;
+}
+$todo_icon1 : #24a900;
+$todo_icon2 : #0890a0; 
+.todo_icon1{
+    color:$todo_icon1;
+}
+.todo_icon2{
+    color:$todo_icon2;
+}
+$todo_font : 12px;
+.todo_font{
+    font-size: $todo_font;  
+}
+$todo_iconsize : 15px;
+.todo_iconsz{
+    font-size:$todo_iconsize;
 }
