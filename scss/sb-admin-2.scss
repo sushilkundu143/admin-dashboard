@@ -35,7 +35,7 @@ body {
 .col-panel {
     float: left;
     width: (100% / 5);
-    padding: 15px;
+    padding: 20px 15px 15px;
 }
 
 .panel {
@@ -993,12 +993,13 @@ table.event-table {
 }
 
 .header_btn2 {
-    padding: 0px;
-    margin-top: 5px;
+    padding: 5px;
+    background-color: $theme-color;
 }
 
 .header_input {
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .header_input_padding {
@@ -1009,4 +1010,20 @@ table.event-table {
 .header_input_padding2 {
     padding-left: 7.5px;
     padding-right: 7px;
+}
+
+button.dropdown-toggle {
+    min-width: 143px;
+    text-align: left;
+   &:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    z-index: 1;
+    right: 15px;
+    pointer-events: none;
+   }
 }
