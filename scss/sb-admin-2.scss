@@ -47,7 +47,7 @@ body {
     #page-wrapper {
         position: inherit;
         margin: 0 0 0 66px;
-        padding: 0 30px;
+        padding: 0px 30px 20px;
         border-left: 1px solid #e7e7e7;
     }
 }
@@ -816,6 +816,9 @@ body {
     }
     .in-b {
         display: inline-block
+    }
+    .col-lg-auto {
+        float: left;
     }
 }
 
