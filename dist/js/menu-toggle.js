@@ -7,7 +7,7 @@ $(document).ready(function(){
             }, 100);
         });
     });
-
+    // $('.notification-panel > .panel').height(700);
     $("#notification-toggle").click(function(){
         $('.notification-panel').animate({display : 'block', right: '0px'}, 500);
     });
@@ -20,13 +20,16 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     $('#dataTables-example').DataTable({
-        responsive: true
+        responsive: true,
+        pageLength: 5
     });
     $('#dataTables-example1').DataTable({
-        responsive: true
+        responsive: true,
+        pageLength: 5
     });
     $('#dataTables-example2').DataTable({
-        responsive: true
+        responsive: true,
+        pageLength: 5
     });
 });
 // $('.sidebar').height($("body").height());

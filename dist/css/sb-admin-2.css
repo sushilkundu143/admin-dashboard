@@ -1,7 +1,7 @@
 body {
   background-color: #f8f8f8;
   font-family: "Lato";
-  overflow-x: auto; }
+  overflow-x: hidden; }
 
 #wrapper {
   width: 100%;
@@ -499,6 +499,9 @@ body {
     margin: 0 auto;
     float: none; }
 
+  .br-bottom {
+    border-bottom: 1px solid #ccc; }
+
   .pt-10 {
     padding-top: 10px; }
 
@@ -757,11 +760,16 @@ table.event-table {
 .r-border {
   border-right: 1px solid #ccc; }
 
-#myCarousel .carousel-inner .item {
-  padding: 10px 0; }
+#myCarousel .carousel-inner {
+  width: 70%;
+  margin: auto;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
+  #myCarousel .carousel-inner .item {
+    padding: 10px 0; }
 
 .notification-panel {
-  position: fixed;
+  position: absolute;
   right: -400px;
   top: 115px;
   width: 350px;
@@ -811,7 +819,7 @@ table.event-table {
       line-height: 1.2em;
       color: #b8b8ba; }
     .notification-panel .panel .panel-body .alert-slider {
-      height: 150px; }
+      height: 128px; }
       .notification-panel .panel .panel-body .alert-slider .carousel {
         width: 100% !important;
         background: #eee !important;
@@ -820,27 +828,27 @@ table.event-table {
           background: none;
           border: none; }
         .notification-panel .panel .panel-body .alert-slider .carousel .left {
-          border-right: 1px solid rgba(0, 0, 0, 0.6);
           color: #333; }
         .notification-panel .panel .panel-body .alert-slider .carousel .right {
-          border-left: 1px solid rgba(0, 0, 0, 0.6);
           color: #333; }
     .notification-panel .panel .panel-body .alert-detail .panel {
       border-radius: 5px;
       margin-top: 10px; }
       .notification-panel .panel .panel-body .alert-detail .panel .panel-heading {
-        height: 45px;
-        padding-top: 10px !important;
+        height: 40px;
         background: #fff !important; }
         .notification-panel .panel .panel-body .alert-detail .panel .panel-heading .panel-title {
           padding: 0 !important; }
           .notification-panel .panel .panel-body .alert-detail .panel .panel-heading .panel-title a {
             color: #555 !important;
             font-weight: 600;
-            font-size: 18px; }
+            font-size: 16px; }
+            .notification-panel .panel .panel-body .alert-detail .panel .panel-heading .panel-title a i {
+              margin-right: 10px; }
         .notification-panel .panel .panel-body .alert-detail .panel .panel-heading div {
           font-size: 16px;
-          margin-right: 10px; }
+          margin-right: 10px;
+          padding-top: 5px; }
           .notification-panel .panel .panel-body .alert-detail .panel .panel-heading div span {
             margin-right: 10px; }
           .notification-panel .panel .panel-body .alert-detail .panel .panel-heading div i {
