@@ -199,7 +199,7 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 			var that = this;
  			var $this = $(that),
  				data = $(that).data('dcalendar'),
- 				options = $.extend({}, $.fn.dcalendar.defaults, $this.data(), typeof opts == 'object' && opts);
+				 options = $.extend({}, $.fn.dcalendar.defaults, $this.data(), typeof opts == 'object' && opts);
  			if(!data){
  				$this.data('dcalendar', (data = new DCalendar(this, options)));
  			}

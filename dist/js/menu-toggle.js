@@ -49,3 +49,39 @@ oTable = $('#myTable').DataTable();   //pay attention to capital D, which is man
 $('#myInputTextField').keyup(function(){
       oTable.search($(this).val()).draw() ;
 })
+// calendar data match functionality
+let dataMatches = $('.table.event-table > tbody > tr');
+let dates = ((dataMatches) => {
+    let result = [];
+   for(current of dataMatches){
+       let d = $(current).attr("data-date");
+       d = new Date(d).toISOString().substring(0, 10);
+      result.push(d);
+   }
+   return result;
+});
+let myDa = dates(dataMatches);
+$('table#calendar-demo td>span').click(function(){
+    let myResult;
+    let eventUpdateDate = $('#event-updates').find('div.date');
+    let eventUpdateContent = $('#event-updates').find('div.content');
+    let dateD = $(this).text();
+    let monthD = $('#currM').text();
+    let d = new Date(dateD + monthD),
+    month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+    if (myDa.indexOf(`${year}-${month}-${day}`) > -1) {
+        let dataDate = $(`table.event-table`).find(`tr[data-date="${year}-${month}-${day}"] > td.event-desc span.date-data`).text();
+        let dataDesc = $('table.event-table').find(`tr[data-date="${year}-${month}-${day}"] > td.event-desc span.date-content`).text();
+        eventUpdateDate.text(dataDate);
+        eventUpdateContent.text(dataDesc);
+    } else {
+        myResult = false;
+    }
+    return myResult;
+});
+
+
