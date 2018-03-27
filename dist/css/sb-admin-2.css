@@ -98,7 +98,16 @@ body {
   .sidebar ul li a {
     overflow: hidden; }
     .sidebar ul li a:hover > .menu-item-desc {
-      display: block; }
+      position: fixed;
+      left: 65px;
+      background-color: #00A3B3;
+      height: 79px;
+      vertical-align: middle;
+      line-height: 2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; }
     .sidebar ul li a div {
       float: left !important;
       padding: 25px 10px 25px 10px;
@@ -107,8 +116,9 @@ body {
       width: 65px; }
     .sidebar ul li a .menu-item-desc {
       display: none;
-      padding: 30px 40px 27px 2px;
-      height: 100% !important;
+      vertical-align: middle;
+      padding-right: 40px;
+      padding-left: 1.5px;
       border-left: 1px solid rgba(255, 255, 255, 0.1);
       width: 181px; }
       .sidebar ul li a .menu-item-desc span {

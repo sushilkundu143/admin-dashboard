@@ -140,7 +140,16 @@ body {
             overflow: hidden;
             a {
                 &:hover>.menu-item-desc {
-                    display: block;
+                    position: fixed;
+                    left: 65px;
+                    background-color: #00A3B3;
+                    height: 79px;
+                    vertical-align: middle;
+                    line-height: 2;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
                 }
                 overflow: hidden;
                 div {
@@ -153,8 +162,11 @@ body {
                 }
                 .menu-item-desc {
                     display: none;
-                    padding: 30px 40px 27px 2px;
-                    height: 100% !important;
+                    vertical-align: middle;
+                    padding-right: 40px;
+                    padding-left: 1.5px;
+                    // padding: 30px 40px 27px 2px;
+                   // height: 100% !important;
                     border-left: 1px solid rgba(255, 255, 255, 0.1);
                     width: 181px;
                     span {
@@ -1241,43 +1253,51 @@ table.event-table {
 .dataTables_info {
     display: none;
 }
+
 .dataTables_length {
     display: none;
 }
-.todo_list_txt{
+
+.todo_list_txt {
     color: #04707c;
     font-weight: 700;
     margin-bottom: 2px;
 }
-.todo_list_txt2{
+
+.todo_list_txt2 {
     font-weight: 700;
 }
-.todo_list_txt3{
+
+.todo_list_txt3 {
     font-weight: 700;
     color: #f00000;
     margin-bottom: 2px;
 }
 
-
-.todo_txt1{
+.todo_txt1 {
     color: $todo_li_datetime_color;
 }
-.todo_txt2{
+
+.todo_txt2 {
     color: $todo_li_txt_color;
 }
-$todo_icon1 : #24a900;
-$todo_icon2 : #0890a0; 
-.todo_icon1{
-    color:$todo_icon1;
+
+$todo_icon1: #24a900;
+$todo_icon2: #0890a0;
+.todo_icon1 {
+    color: $todo_icon1;
 }
-.todo_icon2{
-    color:$todo_icon2;
+
+.todo_icon2 {
+    color: $todo_icon2;
 }
-$todo_font : 12px;
-.todo_font{
-    font-size: $todo_font;  
+
+$todo_font: 12px;
+.todo_font {
+    font-size: $todo_font;
 }
-$todo_iconsize : 15px;
-.todo_iconsz{
-    font-size:$todo_iconsize;
+
+$todo_iconsize: 15px;
+.todo_iconsz {
+    font-size: $todo_iconsize;
 }
