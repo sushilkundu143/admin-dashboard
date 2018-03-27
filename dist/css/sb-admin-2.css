@@ -126,6 +126,18 @@ body {
         text-transform: uppercase;
         display: inline-block; }
 
+.sidebar .menu-active {
+  position: fixed;
+  left: 65px;
+  background-color: #00A3B3;
+  height: 79px;
+  vertical-align: middle;
+  line-height: 2;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left; }
+
 .sidebar .arrow {
   float: right; }
 

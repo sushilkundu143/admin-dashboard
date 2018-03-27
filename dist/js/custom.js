@@ -1,11 +1,7 @@
 $(document).ready(function () {
 
     $("#toggle-btn").click(function () {
-        $(".menu-item-desc").toggle(function () {
-            $(".menu-item-desc").animate({
-                opacity: 0.8
-            }, 100);
-        });
+            $(".menu-item-desc").toggleClass('menu-active', 1000);
     });
     // $('.notification-panel > .panel').height(700);
     $("#notification-toggle").click(function () {
