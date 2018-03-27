@@ -107,7 +107,7 @@ body {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      text-align: center; }
+      text-align: left; }
     .sidebar ul li a div {
       float: left !important;
       padding: 25px 10px 25px 10px;
